@@ -6,11 +6,7 @@ $(document).ready(function() {
           items.push( "<tr><td>" + val.name + "</td><td>" + val.description + "</td><td><a href='https://www.google.com/maps?q=" + val.location + "'>link</a></td></tr>" );
         });
     
-        $( "<table/>", {
-            "name": "",
-            "description": "",
-            "location": "",
-            html: items.join( "" )
-          }).appendTo( "body" );
+        $('table').append( items );
+
         });
       });
